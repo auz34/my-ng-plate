@@ -1,7 +1,7 @@
 'use strict';
 
-app.controller("AppCtrl", function () {
+angular.module('app').controller('AppCtrl', function () {
     var app = this;
 
-    app.message = "Simples Angular Application";
+    app.message = 'Simplest Angular Application';
 });

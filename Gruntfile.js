@@ -5,6 +5,8 @@ module.exports = function (grunt) {
     /*
      Load npm tasks here.
      */
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     var userConfig = require( './grunt.settings.js' );
     userConfig.pkg = grunt.file.readJSON('package.json');
