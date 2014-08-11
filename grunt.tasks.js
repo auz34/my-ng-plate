@@ -43,5 +43,13 @@ module.exports = {
                 globals: {}
             }
         }
+    },
+
+    // Test settings
+    karma: {
+        unit: {
+            configFile: 'karma.conf.js',
+            singleRun: true
+        }
     }
 };
