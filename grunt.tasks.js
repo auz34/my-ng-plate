@@ -10,6 +10,11 @@ module.exports = {
         jssrc: {
             files: ['<%= app_files.js %>'],
             tasks: [ 'jshint:src']
+        },
+
+        jsTest: {
+            files: ['<%= app_files.jsunit %>'],
+            tasks: ['jshint:src', 'karma']
         }
     },
     jshint: {
@@ -17,6 +22,13 @@ module.exports = {
             src: ['<%= app_files.js %>'],
             options: {
                 jshintrc: '.jshintrc',
+                reporter: require('jshint-stylish')
+            }
+        },
+        test: {
+            src: ['<%= app_files.jsunit %>'],
+            options: {
+                jshintrc: 'test/.jshintrc',
                 reporter: require('jshint-stylish')
             }
         },
