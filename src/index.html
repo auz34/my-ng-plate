@@ -5,10 +5,23 @@
     <title></title>
 </head>
 <body ng-app="app" ng-controller="AppCtrl as ctrl">
-{{ ctrl.message  }}
-<app-version></app-version>
+<h2>It is my own angular boiler plate (version: <app-version></app-version>)</h2>
+<div class="box">
+    <div>
+        {{ ctrl.message  }}
+    </div>
+</div>
+
+<div class="alternative-box">
+    <div>
+        {{ message  }}
+    </div>
+</div>
+
 <script src="bower_components/angular/angular.js"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/services/appVersion.js"></script>
+<script src="scripts/directives/appVersion.js"></script>
 <script src="scripts/controllers/appCtrl.js"></script>
 </body>
 </html>

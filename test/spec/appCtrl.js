@@ -27,7 +27,11 @@ describe('Controller: appCtrl: logic', function () {
         });
     }));
 
-    it('should attach a message to the scope', function () {
+    it('should contain its own properties', function () {
         expect(appCtrl.message).toBe('Simplest Angular Application');
+    });
+
+    it('should attach a message to the scope', function () {
+        expect(scope.message).toBe('Scope of the simplest angular application');
     });
 });
