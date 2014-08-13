@@ -63,5 +63,18 @@ module.exports = {
             configFile: 'karma.conf.js',
             singleRun: true
         }
+    },
+
+    /**
+     * `grunt-contrib-less` handles our LESS compilation and uglification automatically.
+     * We include each file separately without any wildcards because less files can import each others
+     * and there is no sense to build less file designed to be imported.
+     */
+    less: {
+        development: {
+            files: {
+                'src/css/main.css': 'src/less/main.less'
+            }
+        }
     }
 };

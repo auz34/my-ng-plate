@@ -7,6 +7,7 @@ module.exports = {
      */
     app_files: {
         js: [ 'src/scripts/**/*.js', '!src/bower_components/**/*.js'],
-        jsunit: [ 'test/spec/**/*.js' ]
+        jsunit: [ 'test/spec/**/*.js' ],
+        less: [ 'src/**/*.less' ]
     }
 };
