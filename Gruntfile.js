@@ -11,6 +11,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-karma');
 
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-react');
 
     var userConfig = require( './grunt.settings.js' );
     userConfig.pkg = grunt.file.readJSON('package.json');

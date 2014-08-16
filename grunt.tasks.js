@@ -76,5 +76,19 @@ module.exports = {
                 'src/css/main.css': 'src/less/main.less'
             }
         }
+    },
+
+    react: {
+        development: {
+            files: [
+                {
+                    expand: true,
+                    cwd: 'src/jsx',
+                    src: ['*.jsx'],
+                    dest: 'src/scripts/reactViews',
+                    ext: '.jsx.js'
+                }
+            ]
+        }
     }
 };
