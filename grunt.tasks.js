@@ -121,5 +121,21 @@ module.exports = {
                 extDot: 'last'
             }]
         }
+    },
+
+    /**
+     * Minify the sources!
+     */
+    uglify: {
+        compile: {
+            options: {
+                banner: '<%= meta.banner %>',
+                sourceMap: true,
+                sourceMapIncludeSources: true
+            },
+            files: {
+                '<%= output.minified %>': '<%= output.annotated %>'
+            }
+        }
     }
 };

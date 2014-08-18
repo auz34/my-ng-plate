@@ -15,6 +15,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-ng-annotate');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     var userConfig = require( './grunt.settings.js' );
     userConfig.pkg = grunt.file.readJSON('package.json');
