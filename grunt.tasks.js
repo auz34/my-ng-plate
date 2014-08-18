@@ -108,5 +108,18 @@ module.exports = {
             ],
             dest: '<%= output.concatenated %>'
         }
+    },
+
+    ngAnnotate: {
+        dist: {
+            files: [{
+                expand: true,
+                cwd: '<%= output.folder %>',
+                src: ['*.js'],
+                dest: '<%= output.annotated %>',
+                ext: '.annotated.js',
+                extDot: 'last'
+            }]
+        }
     }
 };

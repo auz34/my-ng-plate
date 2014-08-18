@@ -40,6 +40,8 @@ module.exports = {
     },
 
     output: {
-        concatenated: 'output/myNgPlate.js'
+        folder: 'output/',
+        concatenated: 'output/myNgPlate.js',
+        annotated:'.tmp/annotated'
     }
 };

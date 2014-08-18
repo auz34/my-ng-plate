@@ -6,6 +6,7 @@ src/bower_components/
 [Oo]utput*/
 *.css
 *.jsx.js
+.tmp/
 
 # Web Storm specific files
 .idea/

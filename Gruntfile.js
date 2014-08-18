@@ -14,6 +14,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-react');
 
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-ng-annotate');
 
     var userConfig = require( './grunt.settings.js' );
     userConfig.pkg = grunt.file.readJSON('package.json');
