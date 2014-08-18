@@ -90,5 +90,23 @@ module.exports = {
                 }
             ]
         }
+    },
+
+    concat: {
+        js: {
+            options: {
+                banner: '<%= meta.bannerstrict %>',
+                process: function(src, filepath) {
+                    return '// Source: ' + filepath + '\n' +
+                        src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');
+                }
+            },
+            src: [
+                'src/scripts/app.js',
+                '<%= app_files.js %>',
+                '<%= app_files.compiledJsx %>'
+            ],
+            dest: '<%= output.concatenated %>'
+        }
     }
 };
