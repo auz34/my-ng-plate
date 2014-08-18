@@ -137,5 +137,15 @@ module.exports = {
                 '<%= output.minified %>': '<%= output.annotated %>'
             }
         }
+    },
+
+    /**
+     * Remove all derivative files
+     */
+    clean: {
+        tmp: ['.tmp'],
+        built: ['output',
+            'src/css/*.css', '!src/css/readme.md',
+            'src/scripts/reactViews/*.jsx.js', '!src/scripts/reactViews/readme.md']
     }
 };
