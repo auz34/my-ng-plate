@@ -75,6 +75,14 @@ module.exports = {
             files: {
                 'src/css/main.css': 'src/less/main.less'
             }
+        },
+        production: {
+            options: {
+                cleancss: true
+            },
+            files: {
+                '<%= output.css %>': 'src/less/main.less'
+            }
         }
     },
 

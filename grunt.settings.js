@@ -44,6 +44,7 @@ module.exports = {
         concatenated: 'output/myNgPlate.js',
         annotatedFolder:'.tmp/annotated',
         annotated: '.tmp/annotated/myNgPlate.annotated.js',
-        minified: 'output/myNgPlate.min.js'
+        minified: 'output/myNgPlate.min.js',
+        css: 'output/main.css'
     }
 };
