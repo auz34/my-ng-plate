@@ -133,7 +133,7 @@ module.exports = {
                 expand: true,
                 cwd: '<%= output.folder %>',
                 src: ['*.js'],
-                dest: '<%= output.annotated %>',
+                dest: '<%= output.annotatedFolder %>',
                 ext: '.annotated.js',
                 extDot: 'last'
             }]
