@@ -15,6 +15,15 @@ module.exports = {
         jsTest: {
             files: ['<%= app_files.jsunit %>'],
             tasks: ['jshint:src', 'karma']
+        },
+        less: {
+            files: ['<%= app_files.less %>'],
+            tasks: ['less:development']
+        },
+
+        jsx: {
+            files: ['<%= app_files.jsx %>'],
+            tasks: ['react:development']
         }
     },
     jshint: {
