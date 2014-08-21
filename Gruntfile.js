@@ -28,4 +28,7 @@ module.exports = function (grunt) {
     /*
      Register tasks here
      */
+
+    grunt.registerTask('checkAll',
+        ['jshint','karma']);
 };
