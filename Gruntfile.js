@@ -31,4 +31,15 @@ module.exports = function (grunt) {
 
     grunt.registerTask('checkAll',
         ['jshint','karma']);
+
+    grunt.registerTask('buildAll', [
+        'clean',
+        'checkAll',
+        'less',
+        'react',
+        'concat',
+        'ngAnnotate',
+        'uglify',
+        'clean:tmp'
+    ]);
 };
